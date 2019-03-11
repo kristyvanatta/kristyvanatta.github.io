@@ -3,13 +3,15 @@
 <head>
 	<title>Portfolio</title>
 
-	<link rel="stylesheet" type="text/css" href="./style.css">
+	<link rel="stylesheet" type="text/css" href="./style.css">"
+    <script> 
+     type="text/javascript" src="./src/js/app.js"</script>
 </head>
 <body>
 
 	<header>
 		<h1>Kristy Vanatta</h1>
-		<span>Junior Software Developer</span>
+		<span>Software Developer</span>
     </header>
 
     <main>
@@ -30,7 +32,7 @@
                         <a href="https://github.com/kristyvanatta">GitHub</a>
                     </li>
     		      </ul>
-                  <p>Driven junior software developer embarking on a career shift in information technology</p>
+                  <p>Driven software developer embarking on a career shift to information technology.</p>
                   <p> My skills include:</p>
                   <ul>
                     <li>Spring MVC</li>
@@ -47,30 +49,52 @@
     	</section>
     	<section id="myProjects">
     		<h2>Projects</h2>
-    		<p>Below are just a few projects I have been working on.</p>
+    		<p>Below are just a few of the projects I have been working on.</p>
     		<div id="projects">
     			<article>
     				<h3>
                        <a href="https://github.com/kristyvanatta/FortuneTeller">Fortune Teller</a>
                     </h3>
-    				<img src="./images/fortuneteller.png">
+    				<img class="mySlides" src="./images/fortuneteller.png">
                     <p>Let Miss Odessa tell you your future. Java was used to build out this app.</p>
                 </article>
     			<article>
     				<h3>
                         <a href="https://github.com/kristyvanatta/reviews">Review Site</a>
                     </h3>
-    				<img src="./images/reviews.png">
+    				<img class="mySlides" src="./images/reviews.png">
     				<p> The Review Site was designed using Java, TDD, HTML, CSS, Spring MVC, and Thymeleaf to set up a basic web page.</p>
                 </article>   
     			<article>
     				<h3>
                         <a href="https://github.com/kristyvanatta/virtual-pets-amok">Virtual Pets Amok</a>
                     </h3>
-    				<img src="./images/petsamok.png">
+    				<img class="mySlides" src="./images/petsamok.png">
     				<p> Oh no! The pets have gone amok. Java, TDD, JUnit were all used to build out this app.</p>
                 </article>
+           
     		</div>
+                <button class="slide-button slide-display-left" onclick="plusDivs(-1)">&#10094; Prev</button>
+                <button class="slide-button slide-display-right" onclick="plusDivs(+1)">Next &#10095;</button>
+            <div class="slide-display-container mySlide">
+                <img src="./images/fortuneteller.png" style="width:50%">
+                <div class="slide-display-bottomleft slide-container slide-padding-16 slide-black">
+                    Fortune Teller
+                </div>
+            </div>
+            <div class="slide-display-container mySlide">
+                <img src="./images/reviews.png" style="width:50%">
+                <div class="slide-display-bottomleft slide-container slide-padding-16 slide-black">
+                    Reviews Site
+                </div>
+            </div>
+            <div class="slide-display-container mySlide">
+                <img src="./images/petsamok.png" style="width:50%">
+                <div class="slide-display-bottomleft slide-container slide-padding-16 slide-black">
+                    Virtual-Pets-Amok
+                </div>
+            </div>
+     
 
     	</section>
     	
